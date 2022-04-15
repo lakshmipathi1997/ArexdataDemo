@@ -16,16 +16,20 @@ pipeline {
                 bat 'mvn clean install -P %TestingType%'
             }
         }
-        stage('Gmail Notification')
+           stage('Gmail Notification')
 				{
 					steps
 					{
-						emailext attachmentsPattern: '**/report.html', body: 'Find attachments', subject: 'Arexdata_AutomationBuild_Report, to: 'lakshmipathi.kantipalli57@gmail.com'
 						mail bcc: '', body: '''Hi , Here are your Build Results ,Please Find
 
                                                 Thanks
                                                 Lakshmipathi''', cc: 'siva0750@gmail.com', from: '', replyTo: '', subject: 'Arexdata Jenkins Build Results', to: 'lakshmipathi.kantipalli57@gmail.com'
 					}
 				}
+	    stage('SendExtentReports'){
+		    steps{
+			emailext attachmentsPattern: '**/report.html', body: 'Find attachments', subject: 'test', to: 'lakshmipathimunna@gmail.com'
+		    }
+	    }
     }
 }
