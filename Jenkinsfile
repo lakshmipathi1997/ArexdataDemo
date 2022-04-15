@@ -1,9 +1,9 @@
 pipeline {
+    agent any
     stages {
-        stage('Clean') {
+        stage('Example') {
             steps {
                 echo 'Hello World'
-                bat "mvn --version"
             }
         }
     }
