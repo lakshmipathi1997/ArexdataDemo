@@ -11,7 +11,7 @@ pipeline {
                 bat 'mvn clean'
             }
 			}
-			stage('SmokeTest') {
+			stage(${TestingType}) {
             steps {
                 bat 'mvn clean install -DPROFILE=${TestingType}'
             }
