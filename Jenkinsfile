@@ -15,15 +15,8 @@ pipeline {
             steps {
                 bat 'mvn clean install -P %TestingType%'
             }
-        }
-
-	    stage('SendExtentReports'){
-		    steps{
-			emailext attachmentsPattern: '**/report.html', body: 'Find attachments', subject: 'test', to: 'lakshmipathimunna@gmail.com'
-		    }
-	    }
-	    
-	     post {
+        }  
+	   post {
         always {
             echo 'One way or another, I have finished'
             deleteDir() /* clean up our workspace */
