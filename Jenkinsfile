@@ -1,15 +1,20 @@
 pipeline {
-    agent any
+     agent any
     stages {
-        stage('Example') {
+        stage('CheckMavenVersion') {
             steps {
-                echo 'Hello World'
+                bat 'mvn --version'
             }
         }
-    }
-    post { 
-        always { 
-            echo 'I will always say Hello again!'
+         stage('Clean') {
+            steps {
+                bat 'mvn clean'
+            }
+			stage('SmokeTest') {
+            steps {
+                bat 'mvn clean install -DPROFILE=SmokeTest'
+            }
+        }
         }
     }
 }
