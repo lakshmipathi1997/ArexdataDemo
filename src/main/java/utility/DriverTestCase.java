@@ -151,7 +151,7 @@ public abstract class DriverTestCase {
 //        File file = new File("");
 //        String absolutePathOfFirstFile = file.getAbsolutePath();
 //        path = absolutePathOfFirstFile.replaceAll("\\\\+", "/");
-        return  "C://Users//Dell//ArexdataAutomation//qa-automation//drivers//chromedriver.exe";
+        return  "C://Users//Dell//ArexdataAutomation//qa-automation";
     }
 
     /*

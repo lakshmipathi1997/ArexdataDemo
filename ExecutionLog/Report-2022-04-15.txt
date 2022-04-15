@@ -45,3 +45,10 @@ Apr 15,2022 14:45:44 [info]  Entered password as Laxmipathi@1997
 Apr 15,2022 15:40:51 [info]  Entered username as lakshmipathi.kantipalli57@gmail.com
 Apr 15,2022 15:40:53 [info]  Entered password as Laxmipathi@1997
 Apr 15,2022 15:40:57 [info]  Clicked on login button
+Apr 15,2022 15:52:04 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 15:52:04 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 15:52:05 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 15:52:05 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 15:52:06 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 15:52:06 [info]  TestrailProjectName:  Arexdata
+Apr 15,2022 15:52:06 [info]  TestrailRunName:  AutomatedTestCases
