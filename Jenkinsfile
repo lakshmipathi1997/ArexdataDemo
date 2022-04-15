@@ -16,13 +16,15 @@ pipeline {
                 bat 'mvn clean install -P %TestingType%'
             }
         }
-        stage('Gmail')
+        stage('Gmail Notification')
 				{
 					steps
 					{
-						emailext body: "*${currentBuild.currentResult}:* Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n More information at: ${env.BUILD_URL}",
-						subject: 'Test Automation Pipeline Build Status',
-						to: 'lakshmipathimunna@gmail.com'
+						emailext attachmentsPattern: '**/report.html', body: 'Find attachments', subject: 'Arexdata_AutomationBuild_Report, to: 'lakshmipathi.kantipalli57@gmail.com'
+						mail bcc: '', body: '''Hi , Here are your Build Results ,Please Find
+
+                                                Thanks
+                                                Lakshmipathi''', cc: 'siva0750@gmail.com', from: '', replyTo: '', subject: 'Arexdata Jenkins Build Results', to: 'lakshmipathi.kantipalli57@gmail.com'
 					}
 				}
     }
