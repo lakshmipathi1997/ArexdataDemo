@@ -1,5 +1,10 @@
 pipeline {
     stages {
+	    stage('SCM CHeckout') {
+            steps {
+               git https://github.com/lakshmipathi1997/ArexdataDemo
+            }
+        }
         stage('CheckMavenVersion') {
             steps {
                 bat 'mvn --version'
@@ -14,7 +19,6 @@ pipeline {
                 bat 'mvn clean install -DPROFILE=SmokeTest'
             }
         }
-		
         }
     }
 }
