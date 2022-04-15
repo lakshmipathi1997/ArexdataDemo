@@ -16,26 +16,13 @@
 	</properties>
 <profiles>
 		<profile>
-			<id>regression</id>
-			<activation>
-				<property>
-					<name>env.PROFILE</name>
-					<value>RegressionTest</value>
-				</property>
-			</activation>
+			<id>RegressionTest</id>
 			<properties>
 				<profile.suiteXmlFile>src\test\resources\testRun\regressionTestSuite.xml</profile.suiteXmlFile>
 			</properties>
 		</profile>
 		<profile>
-			<id>smoke</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-				<property>
-					<name>env.PROFILE</name>
-					<value>SmokeTest</value>
-				</property>
-			</activation>
+			<id>SmokeTest</id>
 			<properties>
 				<profile.suiteXmlFile>src\test\resources\testRun\smokeTestSuite.xml</profile.suiteXmlFile>
 			</properties>
