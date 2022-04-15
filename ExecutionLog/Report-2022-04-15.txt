@@ -1,0 +1,44 @@
+Apr 15,2022 13:59:41 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 13:59:41 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 13:59:42 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 13:59:42 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 13:59:43 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 13:59:43 [info]  TestrailProjectName:  Arexdata
+Apr 15,2022 13:59:43 [info]  TestrailRunName:  AutomatedTestCases
+Apr 15,2022 14:23:59 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:24:00 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:24:00 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:24:01 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:24:02 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:24:02 [info]  TestrailProjectName:  Arexdata
+Apr 15,2022 14:24:02 [info]  TestrailRunName:  AutomatedTestCases
+Apr 15,2022 14:26:14 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:26:15 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:26:15 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:26:16 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:26:17 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:26:17 [info]  TestrailProjectName:  Arexdata
+Apr 15,2022 14:26:17 [info]  TestrailRunName:  AutomatedTestCases
+Apr 15,2022 14:28:46 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:28:47 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:28:48 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:28:48 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:28:49 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:28:49 [info]  TestrailProjectName:  Arexdata
+Apr 15,2022 14:28:49 [info]  TestrailRunName:  AutomatedTestCases
+Apr 15,2022 14:35:54 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:35:55 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:35:55 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:35:56 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:35:57 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:35:57 [info]  TestrailProjectName:  Arexdata
+Apr 15,2022 14:35:57 [info]  TestrailRunName:  AutomatedTestCases
+Apr 15,2022 14:38:18 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:38:18 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:38:19 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:38:19 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:38:20 [info]  Closing driver on platform: Windows 10
+Apr 15,2022 14:38:20 [info]  TestrailProjectName:  Arexdata
+Apr 15,2022 14:38:20 [info]  TestrailRunName:  AutomatedTestCases
+Apr 15,2022 14:45:42 [info]  Entered username as lakshmipathi.kantipalli57@gmail.com
+Apr 15,2022 14:45:44 [info]  Entered password as Laxmipathi@1997
