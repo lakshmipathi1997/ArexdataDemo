@@ -11,9 +11,9 @@ pipeline {
                 bat 'mvn clean'
             }
 			}
-	stage('%TestingType%') {
+			stage('Tests') {
             steps {
-                bat 'mvn clean install -DPROFILE=%TestingType%'
+                bat 'mvn clean install -P %TestingType%'
             }
         }
         
