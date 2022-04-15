@@ -16,19 +16,14 @@ pipeline {
                 bat 'mvn clean install -P %TestingType%'
             }
         }
-        
-    }
-}
-  post {
-        failure {
-            emailext attachmentsPattern: 'test.zip', body: '''${SCRIPT, template="groovy-html.template"}''', 
-                    subject: "${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - Failed", 
-                    mimeType: 'text/html',to: "lakshmipathimunna@gmail.com"
-            }
-         success {
-               emailext attachmentsPattern: 'test.zip', body: '''${SCRIPT, template="groovy-html.template"}''', 
-                    subject: "${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - Successful", 
-                    mimeType: 'text/html',to: "lakshmipathimunna@gmail.coom"
-          }      
+        stage('Gmail')
+				{
+					steps
+					{
+						emailext body: "*${currentBuild.currentResult}:* Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n More information at: ${env.BUILD_URL}",
+						subject: 'Test Automation Pipeline Build Status',
+						to: 'lakshmipathimunna@gmail.com'
+					}
+				}
     }
 }
