@@ -27,6 +27,12 @@
 				<profile.suiteXmlFile>src\test\resources\testRun\smokeTestSuite.xml</profile.suiteXmlFile>
 			</properties>
 		</profile>
+	              <profile>
+			<id>FunctionalTest</id>
+			<properties>
+			<profile.suiteXmlFile>src\test\resources\testRun\functionalTestSuite.xml</profile.suiteXmlFile>
+			</properties>
+		</profile>
 	</profiles>
 
 	<dependencies>
