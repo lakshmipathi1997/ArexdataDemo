@@ -18,6 +18,11 @@ pipeline {
                 bat 'mvn clean'
             }
 			}
+	    stage('GmailNotification'){
+		    steps{
+			emailext attachmentsPattern: '**/index.html', body: 'Find attachments', subject: 'AutomationTest', to: 'siva0750@gmail.com'    
+		    }
+	    }
 			stage('Tests') {
             steps {
                 bat 'mvn clean install -P %TestingType%'
