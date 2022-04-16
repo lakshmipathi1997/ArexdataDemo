@@ -1,20 +1,29 @@
 pipeline {
-     agent any
+    agent any
     stages {
-        stage('CheckMavenVersion') {
+        stage('No-op') {
             steps {
-                bat 'mvn --version'
+                sh 'ls'
             }
         }
-         stage('Clean') {
-            steps {
-                bat 'mvn clean'
-            }
-			}
-			stage('Tests') {
-            steps {
-                bat 'mvn clean install -P %TestingType%'
-            }
-        }  
+    }
+    post {
+        always {
+            echo 'One way or another, I have finished'
+			   bat 'mvn --version'
+			   echo 'Maven version has been Verified'
+        }
+        success {
+            echo 'I succeeded!'
+        }
+        unstable {
+            echo 'I am unstable :/'
+        }
+        failure {
+            echo 'I failed :('
+        }
+        changed {
+            echo 'Things were different before...'
+        }
     }
 }
