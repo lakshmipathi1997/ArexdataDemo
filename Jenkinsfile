@@ -30,10 +30,7 @@ pipeline {
             echo 'I am unstable :/'
         }
         failure {
-            echo 'I failed :('
-	     mail to: 'lakshmipathimunna@gmail.com',
-             subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
-             body: "Something is wrong with ${env.BUILD_URL}"
+            slackUploadFile channel: 'arexdataautomationreports', credentialId: 'Pq9ZMt7CZvXq49LmoNJEHUG8', filePath: '"C:\\Users\\Dell\\ArexdataAutomation\\qa-automation\\test-output"', initialComment: 'AutomationTestReport'
         }
         changed {
             echo 'Things were different before...'
