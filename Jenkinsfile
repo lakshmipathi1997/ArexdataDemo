@@ -39,6 +39,7 @@ pipeline {
         }
         changed {
             echo 'Things were different before...'
+	    slackUploadFile channel: 'arexdataautomationreports', credentialId: 'Pq9ZMt7CZvXq49LmoNJEHUG8', filePath: '"C:/Users/Dell/.jenkins/workspace/ArexdataTest/test-output/selenium-automation-report.html"', initialComment: 'AutomationTestReport'
         }
     }
 }  
