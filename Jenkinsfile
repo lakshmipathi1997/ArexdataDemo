@@ -20,7 +20,7 @@ pipeline {
 			}
 	    stage('GmailNotification'){
 		    steps{
-			emailext attachmentsPattern: '**/index.html', body: 'Find attachments', subject: 'AutomationTest', to: 'siva0750@gmail.com'    
+			emailext attachmentsPattern: '**/selenium-automation-report.html', body: 'Find attachments', subject: 'AutomationTest', to: 'siva0750@gmail.com'    
 		    }
 	    }
 			stage('Tests') {
