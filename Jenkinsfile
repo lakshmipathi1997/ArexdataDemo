@@ -35,7 +35,7 @@ pipeline {
             echo 'I am unstable :/'
         }
         failure {
-            slackUploadFile channel: 'arexdataautomationreports', credentialId: 'Pq9ZMt7CZvXq49LmoNJEHUG8', filePath: '"C://Users//Dell//.jenkins//workspace//ArexdataTest//test-output//selenium-automation-report.html"', initialComment: 'AutomationTestReport'
+            slackUploadFile channel: 'arexdataautomationreports', credentialId: 'Pq9ZMt7CZvXq49LmoNJEHUG8', filePath: '"C:/Users/Dell/.jenkins/workspace/ArexdataTest/test-output/selenium-automation-report.html"', initialComment: 'AutomationTestReport'
         }
         changed {
             echo 'Things were different before...'
