@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('No-op') {
             steps {
-                bat 'ls'
+                bat 'dir'
             }
         }
     }
