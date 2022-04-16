@@ -41,7 +41,7 @@ pipeline {
             echo 'I am unstable :/'
         }
         failure {
-	    emailext attachmentsPattern: '**/selenium-automation-report.html', body: 'Hi Team ,Please Find the Attachment For Failed Test Cases', subject: 'AutomationTest', to: 'siva0750@gmail.com'    
+	    emailext attachmentsPattern: '**/selenium-automation-report.html', body: 'Hi Team ,Please Find the Attachment For Failed Test Cases', subject: 'AutomationTest', to: 'nakhter0441@gmail.com,lakshmipathi.kantipalli57@gmail.com'    
             slackUploadFile channel: 'arexdataautomationreports', credentialId: 'Pq9ZMt7CZvXq49LmoNJEHUG8', filePath: '"C:/Users/Dell/.jenkins/workspace/ArexdataTest/test-output/selenium-automation-report.html"', initialComment: 'AutomationTestReport'
 		
         }
