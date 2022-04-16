@@ -23,14 +23,6 @@ pipeline {
                 bat 'mvn clean install -P %TestingType%'
             }
         } 
-	  stage('Gmail Notification')
-				{
-					steps
-					{
-						emailext attachmentsPattern: 'index.html', body: 'Find attachments', subject: 'Arexdata_AutomationBuild_Report, to: 'lakshmipathi.kantipalli57@gmail.com'
-						
-					}
-				}  
     }
     post {
         always {
